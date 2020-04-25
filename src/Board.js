@@ -4,22 +4,24 @@ import Square from './Square';
 
 class Board extends React.Component{
     render(){
+        const status = "Next player: X";
         return(
-            <div className="status">
+            <div>
+                <div className="status">{status}</div>
                 <div className = "board-row">
-                    <Square name = "1"/>
-                    <Square name = "2"/>
-                    <Square name = " 3"/>
+                    <Square value = "1"/>
+                    <Square value = "2"/>
+                    <Square value = " 3"/>
                 </div>
                 <div className = "board-row">
-                    <Square name = "4"/>                
-                    <Square name = "5"/>                
-                    <Square name = "6"/>
+                    <Square value = "4"/>                
+                    <Square value = "5"/>                
+                    <Square value = "6"/>
                 </div>
                 <div className = "board-row">
-                    <Square name = "7"/>
-                    <Square name ="8"/>
-                    <Square name = "9"/>
+                    <Square value = "7"/>
+                    <Square value ="8"/>
+                    <Square value = "9"/>
                 </div>
             </div>
         )
