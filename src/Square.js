@@ -9,7 +9,8 @@ class Square extends React.Component{
    renderSquare = ()=>{
         alert(this.props.value)
         this.setState({value:'X'})
-        console.log(this.state.value)
+        //console.log(this.state.value)
+        
     }
     render(){
         return(
