@@ -11,6 +11,7 @@ ol, ul {
   clear: both;
   content: "";
   display: table;
+  
 }
 
 .status {
@@ -18,7 +19,9 @@ ol, ul {
 }
 
 .square {
-  background: #fff;
+  /*background: #fff;*/
+  background: pink;
+  color: green;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
