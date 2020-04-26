@@ -1,6 +1,25 @@
+/*$iconColor: whitesmoke;
+$iconShadow: lightgray;
+$paperColor: hsl(230, 89%, 62%);
+$paperShadow: hsla(230, 89%, 65%, 0.7);
+$scissorsColor: hsl(39, 89%, 49%);
+$scissorsShadow: hsla(40, 84%, 53%, 0.7);
+$spockColor: hsl(189, 59%, 53%);
+$spockShadow: hsla(189, 58%, 57%, 0.7);
+$lizardColor: hsl(261, 73%, 60%);
+$lizardShadow: hsla(261, 72%, 63%, 0.7); 
+$rockColor: hsl(349, 71%, 52%);
+$rockShadow: hsla(349, 70%, 56%, 0.7);
+$primalColor: hsl(237, 49%, 15%);
+$buttonBorderColor: hsl(217, 16%, 45%);
+$gradientOne: violet;
+$gradientTwo: hsla(217, 16%, 45%, 0.2);
+$gradientThree: hsla(229, 25%, 31%, 0.2);
+$gradientFour: hsla(214, 47%, 23%, 0.2);*/
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+ background-color: hsl(237, 49%, 15%);
 }
 
 ol, ul {
@@ -16,23 +35,29 @@ ol, ul {
 
 .status {
   margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 10px;
+  color: lightseagreen;
 }
 
 .square {
   /*background: #fff;*/
-  background: pink;
-  color: green;
-  border: 1px solid #999;
+  background-color: hsla(229, 25%, 31%, 0.2);
+  background-color: whitesmoke;
+  color: hsl(230, 89%, 62%);
+  text-shadow:6px 6px hsla(230, 89%, 65%, 0.7);
+  border: 5px solid lightseagreen;
+  box-shadow: inset 20px 20px 10px lightgray;
+  border-radius: 10px;
   float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
+  font-size: 100px;
+  font-weight: bolder;
+  line-height: 100px;
+  height: 200px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 200px;
 }
 
 .square:focus {
@@ -46,8 +71,39 @@ ol, ul {
 .game {
   display: flex;
   flex-direction: row;
+  /*background-color: red;*/
+  justify-content: center;
+}
+.board{
+  border: 10px solid lightseagreen;
+  border-radius: 15px;
+  width: 600px;
+  height: 600px;
+  box-shadow: 15px 15px 40px lightseagreen;
+  
 }
 
 .game-info {
   margin-left: 20px;
+}
+@media screen and (max-width: 805px){
+  .game{
+    flex-direction: column;
+    /*background-color: aqua;*/
+    align-items: center;
+  }
+  .square{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border: 3px solid lightseagreen;
+    text-shadow:3px 3px hsla(230, 89%, 65%, 0.7);
+    box-shadow: inset 10px 10px 5px lightgray;
+  }
+  .board {
+    width: 300px;
+    height: 300px;
+    border: 5px solid lightseagreen;
+    box-shadow: 10px 10px 20px lightseagreen;
+  }
 }
