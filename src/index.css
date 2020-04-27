@@ -35,18 +35,24 @@ ol, ul {
 
 .status {
   margin-bottom: 10px;
-  font-size: 36px;
+  font-size: 64px;
   font-weight: bold;
-  padding: 10px;
+  padding: 5px;
   color: lightseagreen;
+}
+.status.X{
+  color: hsl(230, 89%, 62%);
+  text-shadow: none;
+}
+.status.O{
+  color: hsl(349, 71%, 52%);
+  text-shadow: none;
 }
 
 .square {
   /*background: #fff;*/
   background-color: hsla(229, 25%, 31%, 0.2);
-  background-color: whitesmoke;
-  color: hsl(230, 89%, 62%);
-  text-shadow:6px 6px hsla(230, 89%, 65%, 0.7);
+  background-color: whitesmoke;  
   border: 5px solid lightseagreen;
   box-shadow: inset 20px 20px 10px lightgray;
   border-radius: 10px;
@@ -59,7 +65,14 @@ ol, ul {
   text-align: center;
   width: 200px;
 }
-
+.X{
+  color: hsl(230, 89%, 62%);
+  text-shadow:6px 6px hsla(230, 89%, 65%, 0.7);
+}
+.O{
+  color: hsl(349, 71%, 52%);
+  text-shadow:6px 6px hsla(349, 70%, 56%, 0.7);
+}
 .square:focus {
   outline: none;
 }
@@ -93,17 +106,25 @@ ol, ul {
     align-items: center;
   }
   .square{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     font-size: 50px;
     border: 3px solid lightseagreen;
-    text-shadow:3px 3px hsla(230, 89%, 65%, 0.7);
     box-shadow: inset 10px 10px 5px lightgray;
   }
+  .X{
+    text-shadow:3px 3px hsla(230, 89%, 65%, 0.7);
+  }
+  .O{
+    text-shadow:3px 3px hsla(349, 70%, 56%, 0.7);
+  }
   .board {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     border: 5px solid lightseagreen;
     box-shadow: 10px 10px 20px lightseagreen;
+  }
+  .status{
+    font-size: 32px;
   }
 }
