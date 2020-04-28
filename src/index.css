@@ -72,7 +72,7 @@ ol, ul {
   width: 450px;
   height: 450px;
   box-shadow: 15px 15px 40px lightseagreen;
-  margin: 50px;
+  margin: 20px;
 }
 
 .game-info {
@@ -84,7 +84,7 @@ ol, ul {
     width: 90px;
     height: 90px;
     font-size: 60px;
-    border: 3px solid lightseagreen;
+    border: 3px solid rgb(135, 197, 194);
     box-shadow: inset 10px 10px 5px lightgray;
   }
   .X{
@@ -98,6 +98,8 @@ ol, ul {
     height: 270px;
     border: 5px solid lightseagreen;
     box-shadow: 10px 10px 20px lightseagreen;
+    margin: 70px 30px;
+
   }
   .status{
     font-size: 32px;
